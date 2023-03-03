@@ -290,15 +290,17 @@ header .right-section .icon .menu {
 .shorts {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
     margin-left: 80px;
 }
 .shorts .short {
     cursor: pointer;
+    border: 1px solid #77777765;
+    border-radius: 10px;
 }
 .shorts .short .image {
-width: 170px;
+width: 177px;
 border-radius: 10px;
 }
 .shorts .short .image img {
