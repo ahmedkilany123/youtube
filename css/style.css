@@ -51,46 +51,36 @@ header .left-section .image  img {
 
 .profile-menu {
     display: none;
-position: fixed;
-    
-width: 240px;
-    
-height: 520px;
-    
-right: 0px;
-    
-background-color: #282828;
-    
-border-bottom: 1px solid #77777756;
-    
-top: 60px;
-    
-color: white;
-    
-margin-right: 10px;
-    
-z-index: 150;
- }
+    position: fixed;
+    width: 240px; 
+    height: 520px;
+    right: 0px;
+    background-color: #282828;
+    border-bottom: 1px solid #77777756;
+    top: 60px;
+    color: white;
+    margin-right: 10px;
+    z-index: 150;
+}
 .profile-menu.open-menu {
 display: inline;
- }
+}
 .profile-menu .acount {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 5px 5px 10px;
     border-bottom: 1px solid #777777;
- }
+}
 .profile-menu .acount .image {
     width: 40px;
-    
     left: 0;
 }
  .profile-menu .acount .image img {
     max-width: 100%;
     width: 40px; 
     border-radius: 50%;
- }
+}
 .profile-menu .acount p {
     font-size: 14px;
     position: relative;
@@ -106,7 +96,6 @@ display: inline;
 }
 .profile-menu .acount a {
     text-align: center;
-    
     width: 100%;
     left: -20px;
     color: #3ea6ff;
@@ -121,24 +110,18 @@ display: inline;
     border: none;
 }
 .profile-menu .chanal .link {
-    
-padding: 5px;
-    
-font-size: 15px;
+    padding: 5px;
+    font-size: 15px;
 }
 .profile-menu .chanal .link:hover {
     background-color: #77777756;
 }
 .profile-menu .chanal .link i {
-
 font-weight: 700;
-
 padding: 5px;
-
 color: antiquewhite;
 }
 .profile-menu .chanal .link a {
-
 color: antiquewhite;
 }
 
@@ -335,6 +318,27 @@ header .right-section .icon .menu {
 .videos .top-video .vid {
     cursor: pointer;
     width: 275px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.videos .top-video .vid:hover {
+    box-shadow: 0 4px 8px 0 rgb(0 , 0 ,0 ,0.3);
+    position: relative;
+    z-index: 999;
+    background-color: #202020;
+    border-radius: 20px;
+    transform: scale(1.2) translateY(10px);
+    -webkit-transform: scale(1.2) translateY(10px);
+    -moz-transform: scale(1.2) translateY(10px);
+    -ms-transform: scale(1.2) translateY(10px);
+    -o-transform: scale(1.2) translateY(10px);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .videos .top-video .vid .image {
     width: 275px;
