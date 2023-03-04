@@ -25,7 +25,7 @@ header {
     background-color: black;
     color: white;
     height: 67px;
-    padding: 10px;
+    padding: 10px 15px;
     width: 100%;
     flex-direction: column;
     position: fixed;
@@ -36,8 +36,6 @@ header .top {
     justify-content: space-between;
     align-items: center;
 }
-
-.top {}
 header .left-section {
     display: flex;
     gap: 10px;
@@ -48,7 +46,105 @@ header .left-section .image  img {
     width: 30px;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
 }
+
+.profile-menu {
+    display: none;
+position: fixed;
+    
+width: 240px;
+    
+height: 520px;
+    
+right: 0px;
+    
+background-color: #282828;
+    
+border-bottom: 1px solid #77777756;
+    
+top: 60px;
+    
+color: white;
+    
+margin-right: 10px;
+    
+z-index: 150;
+ }
+.profile-menu.open-menu {
+display: inline;
+ }
+.profile-menu .acount {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid #777777;
+ }
+.profile-menu .acount .image {
+    width: 40px;
+    
+    left: 0;
+}
+ .profile-menu .acount .image img {
+    max-width: 100%;
+    width: 40px; 
+    border-radius: 50%;
+ }
+.profile-menu .acount p {
+    font-size: 14px;
+    position: relative;
+    right: -7px;
+}
+.profile-menu .acount .info {
+    padding: 0 0 0 5px;width: 160px;
+}
+.profile-menu .acount span {
+    font-size: 17px;
+    right: -5px;
+    
+}
+.profile-menu .acount a {
+    text-align: center;
+    
+    width: 100%;
+    left: -20px;
+    color: #3ea6ff;
+    font-size: 15px;
+}
+.profile-menu .chanal {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #777777;
+} 
+.profile-menu .end {
+    border: none;
+}
+.profile-menu .chanal .link {
+    
+padding: 5px;
+    
+font-size: 15px;
+}
+.profile-menu .chanal .link:hover {
+    background-color: #77777756;
+}
+.profile-menu .chanal .link i {
+
+font-weight: 700;
+
+padding: 5px;
+
+color: antiquewhite;
+}
+.profile-menu .chanal .link a {
+
+color: antiquewhite;
+}
+
+
+
+
 header .left-section .material-symbols-outlined {
     margin: auto 10px;
     position: relative;
@@ -229,10 +325,12 @@ header .right-section .icon .menu {
 .videos .top-video {
     margin-top: 130px;
     margin-left: 80px;
-    padding-bottom: 15px;
+    padding: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(250px,11fr));
     border-bottom: 3px solid #77777765;
+    gap: 5px;
+    position: relative;
 }
 .videos .top-video .vid {
     cursor: pointer;
@@ -247,8 +345,7 @@ header .right-section .icon .menu {
     height: 155px;
     border-radius: 10px;
 }
-.videos .top-video .info  {
-}
+
 .videos .top-video .info .head {
     display: flex;
     flex-direction: row-reverse;
@@ -288,43 +385,46 @@ header .right-section .icon .menu {
 }
 /* shorts  */
 .shorts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-    gap: 30px;
-    margin-top: 40px;
-    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-bottom: 20px;
 }
 .shorts .short {
     cursor: pointer;
     border: 1px solid #77777765;
     border-radius: 10px;
+    position: relative;
+    margin: 10px;
 }
 .shorts .short .image {
-width: 177px;
-border-radius: 10px;
+    max-width: 100%;
+    width: 177px;
+    border-radius: 10px;
 }
 .shorts .short .image img {
-max-width: 100%;
-border-radius: 10px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 .shorts .short .info {
-color: white;
-display: flex;
-flex-direction: column;
-position: relative;
-top: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 12px;
 }
 .shorts .short .info p {
-width: 100%;
-position: relative;
-display: inline-block;
-text-align: right;
-font-size: 14px;
-font-weight: 600;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
 }
 .shorts .short .info span {
-position: relative;
-width: 170px;
-right: -6px;
-color: #c5b8b8;
+    position: relative;
+    width: 170px;
+    right: -6px;
+    color: #c5b8b8;
 }

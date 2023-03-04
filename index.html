@@ -11,6 +11,8 @@
     <!-- google icons Material  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
 </head>
 <body>
     
@@ -42,11 +44,75 @@
             <section class="left-section">
                 <span class="material-symbols-outlined add">video_call</span>
                 <span class="material-symbols-outlined alarm">notifications</span>
-                <div class="image">
-                    <img src="img/profile.jpg" alt="profile">
+                <div class="image" >
+                    <img src="img/profile.jpg" alt="profile" onclick="profmenu()" >
                 </div>
                 
             </section>
+
+
+            <div class="profile-menu" id="profilemenu">
+                <div class="acount">
+                    <div class="image">
+                        <img src="img/profile.jpg" alt="photo">
+                    </div>
+                    <div class="info">
+                        <p> ahmed kilany </p>
+                        <span>@ahmedredakilany</span>
+                    </div>
+                    <a href="">mange your acount</a>
+                </div>
+                <div class="chanal">
+                    <div class="link">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="">your chanal</a>
+                    </div>
+                    <div class="link">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        <a href="">youtube studio</a>
+                    </div>
+                    <div class="link">
+                        <i class="fa-regular fa-user-gear"></i>
+                        <a href="">change acount</a>
+                    </div>
+                    <div class="link">
+                        <i class="fa-regular fa-arrow-right-from-bracket"></i>
+                        <a href="">log out</a>
+                    </div>
+                </div>
+                <div class="chanal">
+                    <div class="link">
+                        <i class="fa-solid fa-moon"></i>
+                        <a href="">dark mode</a>
+                    </div>
+                    <div class="link">
+                        <i class="fa-solid fa-e"></i>
+                        <a href="">langouge english</a>
+                    </div>
+                    <div class="link">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="">location: egypt</a>
+                    </div>
+                    <div class="link">
+                        <i class="fa-regular fa-keyboard"></i>
+                        <a href="">shortcuts</a>
+                    </div>
+                </div>
+                <div class="chanal">
+                    <div class="link">
+                        <i class="fa-regular fa-gear"></i>
+                        <a href="">setting</a>
+                    </div>
+                </div>
+                <div class="chanal end">
+                    <div class="link">
+                        <i class="fa-regular fa-circle-info"></i>
+                        <a href="">help</a>
+                    </div>
+                </div>
+        
+                </div>
+
         </div>
         
         <div class="bottom">
@@ -60,9 +126,14 @@
                 </section>
         </div>
         
+
+
+      
     </header>
     <!-- end header  -->
-    
+  
+
+    </div>
     <!-- start content  -->
     <div class="content-area">
         <aside>
@@ -365,6 +436,17 @@
                         <span> 1m view </span>
                     </div>
                 </div>
+                <div class="short">
+                    <div class="image">
+                        <img src="img/short2.webp" alt="">
+                    </div>
+                    <div class="info">
+                        <p>  شخصية ون بيس </p>
+                        <span> 1m view </span>
+                    </div>
+                </div>
+             
+                </div>
               
             </section>
         </section>
@@ -374,5 +456,12 @@
 
    
     <!-- end content  -->
+
+    <script>
+        let profilemenu = document.getElementById("profilemenu");
+    function profmenu() {
+        profilemenu.classList.toggle("open-menu");
+}
+    </script>
 </body>
 </html>
