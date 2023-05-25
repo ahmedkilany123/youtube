@@ -386,7 +386,7 @@ header .right-section .icon span {
     border-color: transparent #302d2d;
     position: fixed;
     background-color: black;
-    margin-top: 70px;
+    margin-top: 85px;
     z-index: 120;
 }
 .content-area aside a {
@@ -480,6 +480,7 @@ header .right-section .icon span {
     }
 }
 .videos .top-video .vid {
+    overflow: hidden;
     cursor: pointer;
     width: 275px;
     margin: 10px;
@@ -489,18 +490,24 @@ header .right-section .icon span {
     -ms-transition: 0.7s;
     -o-transition: 0.7s;
 }
-
-.videos .top-video .vid:hover {
+.videos .top-video .vid img {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.videos .top-video .vid img:hover {
     box-shadow: 0 4px 8px 0 rgb(0 , 0 ,0 ,0.3);
     position: relative;
     z-index: 999;
     background-color: #202020;
     border-radius: 20px;
-    transform: scale(1.1) translateY(10px);
-    -webkit-transform: scale(1.1) translateY(10px);
-    -moz-transform: scale(1.1) translateY(10px);
-    -ms-transform: scale(1.1) translateY(10px);
-    -o-transform: scale(1.1) translateY(10px);
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    -ms-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
